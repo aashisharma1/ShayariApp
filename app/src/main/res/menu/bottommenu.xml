@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/love"
+    android:icon="@drawable/heart_plus"
+    android:title="@string/love"/>
+    <item
+        android:id="@+id/sad"
+        android:icon="@drawable/sentiment_dissatisfied"
+        android:title="@string/Sad"/>
+    <item
+        android:id="@+id/Attitude"
+        android:icon="@drawable/astrophotography_auto"
+        android:title="@string/Attitude"/>
+    <item
+        android:id="@+id/haryanvi"
+        android:icon="@drawable/mood"
+        android:title="@string/haryanvi"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings_applications"
+        android:title="@string/settings"/>
+</menu>

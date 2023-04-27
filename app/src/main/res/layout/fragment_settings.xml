@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Settings">
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:id="@+id/darkmodeTab"
+       app:cardCornerRadius="5dp"
+       android:layout_height="75dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="70dp"
+       android:layout_height="70dp"
+       android:id="@+id/animation_view"
+       app:lottie_rawRes="@raw/darkmode"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"/>
+
+   <com.google.android.material.textview.MaterialTextView
+       android:layout_width="wrap_content"
+       android:id="@+id/DarkMode"
+       android:layout_marginStart="18dp"
+       android:textSize="15sp"
+       android:layout_centerVertical="true"
+       android:layout_toEndOf="@id/animation_view"
+       style="@style/TextAppearance.Material3.BodyMedium"
+       android:text="@string/darkmode"
+       android:layout_height="wrap_content"/>
+
+   <com.google.android.material.switchmaterial.SwitchMaterial
+       android:layout_width="wrap_content"
+       android:id="@+id/DarkmodeSwitch"
+       android:layout_toEndOf="@id/DarkMode"
+       android:layout_centerVertical="true"
+       app:thumbTint="@color/white"
+       app:trackTint="@color/stock"
+       style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+       android:layout_marginStart="160dp"
+       android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_marginTop="2dp"
+       android:layout_below="@id/darkmodeTab"
+       android:id="@+id/bookmarkTab"
+       app:cardCornerRadius="5dp"
+       android:layout_height="75dp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="match_parent">
+         <com.airbnb.lottie.LottieAnimationView
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:id="@+id/bookmarkanimation"
+             app:lottie_rawRes="@raw/bookmark"
+             app:lottie_autoPlay="true"
+             app:lottie_loop="true"/>
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="wrap_content"
+             android:id="@+id/bookmarkText"
+             android:layout_marginStart="18dp"
+             android:textSize="15sp"
+             android:layout_centerVertical="true"
+             android:layout_toEndOf="@id/bookmarkanimation"
+             style="@style/TextAppearance.Material3.BodyMedium"
+             android:text="@string/bookmarks"
+             android:layout_height="wrap_content"/>
+
+
+      </RelativeLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_marginTop="2dp"
+       android:layout_below="@id/bookmarkTab"
+       android:id="@+id/rateus"
+       app:cardCornerRadius="5dp"
+       android:layout_height="75dp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="match_parent">
+         <com.airbnb.lottie.LottieAnimationView
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:padding="14dp"
+             android:id="@+id/rateUsanimation"
+             app:lottie_rawRes="@raw/feedback"
+             app:lottie_autoPlay="true"
+             app:lottie_loop="true"/>
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="wrap_content"
+             android:id="@+id/rateUsText"
+             android:layout_marginStart="18dp"
+             android:textSize="15sp"
+             android:layout_centerVertical="true"
+             android:layout_toEndOf="@id/rateUsanimation"
+             style="@style/TextAppearance.Material3.BodyMedium"
+             android:text="@string/rate_us"
+             android:layout_height="wrap_content"/>
+
+
+      </RelativeLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_marginTop="2dp"
+       android:layout_below="@id/rateus"
+       android:id="@+id/contactus"
+       app:cardCornerRadius="5dp"
+       android:layout_height="75dp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="match_parent">
+         <com.airbnb.lottie.LottieAnimationView
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:id="@+id/contactAnimation"
+             app:lottie_rawRes="@raw/support"
+             app:lottie_autoPlay="true"
+             app:lottie_loop="true"/>
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="wrap_content"
+             android:id="@+id/contacttxt"
+             android:layout_marginStart="18dp"
+             android:textSize="15sp"
+             android:layout_centerVertical="true"
+             android:layout_toEndOf="@id/contactAnimation"
+             style="@style/TextAppearance.Material3.BodyMedium"
+             android:text="@string/contact_us"
+             android:layout_height="wrap_content"/>
+
+
+      </RelativeLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_marginTop="2dp"
+       android:layout_below="@id/contactus"
+       android:id="@+id/about_Us"
+       android:focusable="true"
+       app:cardCornerRadius="5dp"
+       android:layout_height="75dp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="match_parent">
+         <com.airbnb.lottie.LottieAnimationView
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:padding="4dp"
+             android:id="@+id/aboutusAmimation"
+             app:lottie_rawRes="@raw/developer"
+             app:lottie_autoPlay="true"
+             app:lottie_loop="true"/>
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="wrap_content"
+             android:id="@+id/aboutUsText"
+             android:layout_marginStart="18dp"
+             android:textSize="15sp"
+             android:layout_centerVertical="true"
+             android:layout_toEndOf="@id/aboutusAmimation"
+             style="@style/TextAppearance.Material3.BodyMedium"
+             android:text="@string/about"
+             android:layout_height="wrap_content"/>
+
+
+      </RelativeLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_marginTop="2dp"
+       android:layout_below="@id/about_Us"
+       android:id="@+id/Exit"
+       app:cardCornerRadius="5dp"
+       android:layout_height="75dp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="match_parent">
+         <com.airbnb.lottie.LottieAnimationView
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:id="@+id/exitAnimation"
+             android:padding="8dp"
+             app:lottie_rawRes="@raw/exit"
+             app:lottie_autoPlay="true"
+             app:lottie_loop="true"/>
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="wrap_content"
+             android:id="@+id/exitText"
+             android:layout_marginStart="18dp"
+             android:textSize="15sp"
+             android:layout_centerVertical="true"
+             android:layout_toEndOf="@id/exitAnimation"
+             style="@style/TextAppearance.Material3.BodyMedium"
+             android:text="@string/exit"
+             android:layout_height="wrap_content"/>
+
+
+      </RelativeLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_below="@id/Exit"
+       android:layout_marginTop="30dp"
+       android:text="@string/version"
+       style="@style/TextAppearance.Material3.LabelSmall"
+       android:layout_centerHorizontal="true"
+       android:layout_height="wrap_content"/>
+
+</RelativeLayout>

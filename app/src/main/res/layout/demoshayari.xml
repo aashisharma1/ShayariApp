@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/demolayout"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Love">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:id="@+id/lovecard"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="5dp"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/love"
+                android:id="@+id/lvImgView"
+                android:layout_marginStart="6dp"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:text="@string/LoveDemo"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/lvTextView"
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

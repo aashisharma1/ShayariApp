@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BottomSheet.BottomSheet">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        style="@style/MyCardView"
+        app:cardElevation="0dp"
+        android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="match_parent"
+           android:src="@drawable/banerol"
+           android:layout_height="wrap_content"
+           android:contentDescription="TODO" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_marginTop="25dp"
+        android:id="@+id/bottomTextId"
+        android:text="@string/hello_blank_fragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/file_copy"
+            android:text="@string/copy"
+            android:id="@+id/copyCard"
+            android:textColor="@color/stock"
+            android:layout_weight="2"
+            android:layout_marginStart="5dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/screen_share"
+            android:text="@string/share"
+            android:layout_weight="2"
+            android:id="@+id/sharecard"
+            android:textColor="@color/stock"
+            android:layout_marginStart="5dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/__icon__whatsapp_"
+            android:text="@string/whatsapp"
+            android:id="@+id/whatsappcard"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="2"
+            android:textColor="@color/stock"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        style="@style/TextAppearance.Material3.BodySmall"
+        android:text="@string/double_tap_on_quotes_to_add_in_bookmark"
+        android:layout_height="wrap_content"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+
+
+</LinearLayout>
