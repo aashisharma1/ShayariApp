@@ -23,7 +23,7 @@ public class Love extends Fragment {
     public Love() {
         // Required empty public constructor
     }
-
+String xml;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
