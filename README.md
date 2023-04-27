@@ -13,4 +13,4 @@ So for now this App Contain All the Basic features
 5. Copy Share and direct Share to WhatsApp Buttons
 6. material 3 Desing 
 7. Lottie Animations Used
-8. Java Programming language
+8. Java Programming language.
